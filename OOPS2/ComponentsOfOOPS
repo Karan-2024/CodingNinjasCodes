@@ -1,0 +1,63 @@
+// Vehicle class
+
+package vehicle;
+ public class Vehicle{
+	 String color;
+	 int maxSpeed;
+	 
+	 public void print()
+	 {
+		 System.out.println("Vehicle color : " + color);
+		 System.out.println("Vehicle Speed : " + maxSpeed);
+		 
+	 }
+ }
+ 
+ 
+ // VehicleUse class
+ package vehicle;
+
+public class VehicleUse {
+
+	public static void main(String[] args) {
+	
+		
+		Vehicle v=new Vehicle();
+		v.print();
+		
+		Car c =new Car();
+		c.numGears =10;
+		c.color ="Black";
+		c.print();
+		
+	}
+
+}
+
+
+// Car class
+package vehicle;
+
+public  class Car extends Vehicle {
+
+	
+int numGears;
+boolean isConvertible;
+
+
+
+
+
+}
+
+
+// output
+Vehicle color : null
+Vehicle Speed : 0
+Vehicle color : Black
+Vehicle Speed : 0
+
+ 
+ 
+ 
+ 
